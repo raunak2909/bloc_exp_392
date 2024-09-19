@@ -1,5 +1,7 @@
+import 'package:bloc_exp_392/bloc/list_bloc.dart';
 import 'package:bloc_exp_392/counter_bloc.dart';
 import 'package:bloc_exp_392/counter_event.dart';
+import 'package:bloc_exp_392/list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -35,9 +37,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: BlocProvider(
-        create: (context) => CounterBloc(),
-        child: MyHomePage(),
-      ),
+        create: (context) => ListBloc(),
+        child: ListPage(),
+      )
     );
   }
 }
